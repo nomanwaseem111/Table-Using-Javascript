@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Poppins:wght@500;600;700&family=Roboto&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>Tables</title>
+    <style>
+        body {
+            background-color: #3498db;
+            font-family: 'Macondo', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 26px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Print Multiplication Table Using Javascript</h1>
+    <h2 id="table"></h2>
+
+
+    <script>
+
+        var tableOf = Number(prompt('Type Any Number,0'));
+
+        for (var i = 1; i <= 10; i++) {
+            document.getElementById('table').innerHTML += `${tableOf} x ${i} = ${tableOf * i}` + "<br>"
+        }
+
+    </script>
+
+</body>
+
+
+
+</html>
